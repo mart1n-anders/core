@@ -64,7 +64,7 @@ options:
     type: list
     elements: str
   strictout:
-    description: 
+    description:
       - Strict Outgoing Network Interface Binding.
       - Do not send recursive queries if none of the Outgoing Network Interfaces are available.
     required: false
