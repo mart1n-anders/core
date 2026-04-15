@@ -4,9 +4,6 @@ pfSensible.Core Release Notes
 
 .. contents:: Topics
 
-v0.7.2
-======
-
 v0.7.1
 ======
 
