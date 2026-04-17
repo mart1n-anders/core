@@ -68,7 +68,6 @@ options:
       - Strict Outgoing Network Interface Binding.
       - Do not send recursive queries if none of the Outgoing Network Interfaces are available.
     required: false
-    default: false
     type: bool
     version_added: 0.7.2
   system_domain_local_zone_type:
@@ -346,7 +345,7 @@ DNS_RESOLVER_ARGUMENT_SPEC = dict(
     tlsport=dict(default=None, type='int'),
     active_interface=dict(default=["all"], type='list', elements='str'),
     outgoing_interface=dict(default=["all"], type='list', elements='str'),
-    strictout=dict(default=False, type='bool'),
+    strictout=dict(type='bool'),
     system_domain_local_zone_type=dict(default='transparent', choices=['deny', 'refuse', 'static', 'transparent', 'typetransparent', 'redirect', 'inform',
                                                                        'inform_deny', 'nodefault']),
     dnssec=dict(default=True, type='bool'),
